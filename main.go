@@ -18,6 +18,10 @@ func main() {
 		if line == "exit" {
 			break
 		}
+
+		if line == "docker" {
+			fmt.Print("docker")
+		}
 		fmt.Println(line)
 	}
 	if err := scanner.Err(); err != nil {
