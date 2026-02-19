@@ -20,7 +20,6 @@ func main() {
 		}
 		fmt.Println(line)
 	}
-
 	if err := scanner.Err(); err != nil {
 
 		fmt.Println(os.Stderr, err)
