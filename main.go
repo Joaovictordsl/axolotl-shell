@@ -9,7 +9,6 @@ import (
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 
-	fmt.Println("test")
 	for {
 		fmt.Print(">")
 
