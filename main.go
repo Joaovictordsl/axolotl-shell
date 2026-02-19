@@ -13,8 +13,6 @@ func main() {
 	default:
 		panic("bad command")
 	}
-
-	fmt.Println("Tente com 'axolotl' para rodar a CLI")
 }
 
 func run() {
