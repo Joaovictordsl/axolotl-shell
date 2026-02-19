@@ -18,7 +18,6 @@ func main() {
 		if line == "exit" {
 			break
 		}
-
 		fmt.Println(line)
 	}
 	if err := scanner.Err(); err != nil {
