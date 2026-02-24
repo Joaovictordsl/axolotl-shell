@@ -1,5 +1,5 @@
 # Usamos a imagem do Go para compilar
-FROM golang:1.23-alpine AS builder
+FROM golang:1.26-alpine AS builder
 
 # IMPORTANTE: Desligar CGO para garantir que o binário rode no Alpine
 ENV CGO_ENABLED=0 GOOS=linux

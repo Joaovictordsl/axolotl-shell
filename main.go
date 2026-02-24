@@ -28,5 +28,8 @@ func run() {
 		Cloneflags: syscall.CLONE_NEWUTS,
 	}
 
-	cmd.Run()
+	if err := cmd.Run(); err != nil {
+		fmt.Printf("Erro ao rodar: %v\n", err)
+		os.Exit(1)
+	}
 }
