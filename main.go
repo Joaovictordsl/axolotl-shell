@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"os/exec"
 )
 
 func main() {
@@ -16,5 +17,12 @@ func main() {
 }
 
 func run() {
-	fmt.Println("Running the function :)")
+	fmt.Printf("Running %v\n", os.Args[2:])
+
+	cmd := exec.Command(os.Args[2], os.Args[3:]...)
+	cmd.Sdtin = os.Stdin
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+
+	cmd.Run()
 }
